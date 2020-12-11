@@ -2,7 +2,6 @@ a[href]:hover {
     color: green;
 }
 h1{
-   font-family: 'WaltographRegular';
    font-weight: normal;
    font-style: normal;
    text-align: center;
@@ -10,17 +9,19 @@ h1{
    font-size: 60px;
   padding: 20px 0;    
   color: #00539F;
-  text-shadow: 3px 3px 1px black;
 }
 h2{
-   font-family: 'WaltographRegular';
+    
+    color: #00539F;
    font-weight: normal;
    font-style: normal;
    text-align: center;
 }
 html {
     background-color: #00539F;
-    text-align: center;
+}
+p {
+    text-align: justify;
 }
 body {
   width: 600px;
