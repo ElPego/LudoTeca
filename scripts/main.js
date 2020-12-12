@@ -1,24 +1,27 @@
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-    let myName = prompt('Please enter your name.');
-    if (!myName) {
-	setUserName()
+function tryAgainPassword() {
+    let myPassword = prompt("Codice sbagliato. L'accesso alla videoteca è protetto da una codice. Accedi alla tua infanzia per ricordarlo");
+    if (myPassword==717990 || myPassword==0){
+	window.location.href = "Videoteca.html";
+	}
+    else if (myPassword!=null && myPassword!=717990 && myPassword!=0){
+	tryAgainPassword();
     }
-    else{
-	localStorage.setItem('name', myName);
-	myHeading.textContent = 'Mozilla is cool, ' + myName;
+    else window.location.href = "index.html";
+}
+
+function tryPassword() {
+    let myPassword = prompt("L'accesso alla videoteca è protetto da una codice. Accedi alla tua infanzia per ricordarlo.");
+    if (myPassword==717990 || myPassword==0) {
+	window.location.href = "Videoteca.html";
+	}
+    else if (myPassword!=null && myPassword!=717990 && myPassword!=0){
+	tryAgainPassword();
+    
     }
+    else window.location.href = "index.html";
 }
 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  let storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Mozilla is cool, ' + storedName;
-}
 
-myButton.onclick = function() {
-  setUserName();
-}
+tryPassword();
+
+

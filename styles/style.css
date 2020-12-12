@@ -1,31 +1,30 @@
-a[href]:hover {
-    color: green;
-}
 h1{
-   font-family: 'WaltographRegular';
    font-weight: normal;
    font-style: normal;
    text-align: center;
    margin: 0;
    font-size: 60px;
   padding: 20px 0;    
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
+  color: #001433;
 }
 h2{
-   font-family: 'WaltographRegular';
+    
+    color: #001433;
    font-weight: normal;
    font-style: normal;
    text-align: center;
 }
 html {
-    background-color: #00539F;
-    text-align: center;
+    background-color:#b3ffb3;
+    color:#001433
+}
+p {
+    text-align: justify;
 }
 body {
   width: 600px;
   margin: 0 auto;
-  background-color: #FF9500;
+  background-color: #00cc00;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
