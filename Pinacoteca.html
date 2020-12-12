@@ -3,46 +3,150 @@
   <head>
     <meta charset="utf-8">
     <title>Pinacoteca</title>
+    <style type="text/css">
+      {
+	  * {box-sizing:border-box}
+    
+/* Slideshow container */
+.slideshow-container {
+        position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+      }
+    </style>
+    
     <link href="styles/style.css" rel="stylesheet">
     </head>
   <body>
+    <p><a href="index.html">LudoTeca</a></p>
     <h1>Pinacoteca</h1>
-    <p>Dopo una prima lettura veloce alla parola ne è seguita un'altra che ahimè mi ha riportato alla realtà. Non si tratta infatti di un luogo dove vengono conservati panini, bensì di un luogo dove vengono conservati dei piancoli, per qulli che fanno un po' fatica con queste parole, dei quadri. In questa raccolta di opere d'arte vengono esposti momenti salienti della vita di Ludovica.</p>
-    
-    <img  src="images/FestaAnniVenti.jpeg" width=600 >
-    <figcaption>
-      <p>La prozia di Ludo che si divertiva a far festa negli anni '20 (sulla sinistra).</p>
-    </figcaption>
-    
-    <img  src="images/AmiciTeatro.jpeg" width=600 >
-    <figcaption>
-      <p>Compagnia di teatro di Ludovica.</p>
-    </figcaption>
-    
-    <img  src="images/Cucciolone.jpeg" width=600 >
-    <figcaption>
-      <p>Il cucciolone, esilerante ospite di Ludovica.</p>
-      </figcaption>
-    
-    <img  src="images/Damigella.jpeg" width=600 >
-    <figcaption>
-      <p>La damigella d'onore.</p>
-      </figcaption>
-    
-    <img  src="images/PoloniaPreferito.jpeg" width=600 >
-    <figcaption>
-      <p>Luoghi freddi.</p>
-      </figcaption>
+    <p>Dopo una prima lettura veloce alla parola ne è seguita un'altra che ahimè mi ha riportato alla realtà. Non si tratta infatti di un luogo dove vengono conservati panini, bensì di un luogo dove vengono conservati dei piancoli, per qulli che fanno un po' fatica con queste parole, dei quadri. In questa raccolta di opere d'arte vengono esposti momenti salienti della vita di Ludovica. Alla fine è presente un'autoritrattoteca, sezione dedicata ai suoi autoritratti.</p>
 
-    <img  src="images/Venezia.jpeg" width=600 >
-    <figcaption>
-      <p>Colori.</p>
-      </figcaption>
 
-    <img  src="images/VeneziaAcqua.jpeg" width=600 >
-    <figcaption>
-      <p>Non tutti sono Gesù.</p>
-      </figcaption>
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img01.jpeg" style="width:100%"><!--  <div class="text">Caption Text</div> --></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img02.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img03.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img04.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img05.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img06.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img07.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img08.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img09.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img10.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img11.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img12.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img13.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img14.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img15.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img16.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img17.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img18.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img19.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img20.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img21.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img22.jpeg" style="width:100%"></div>
+  <div class="mySlides fade" onclick="plusSlides(1)"><img src="images/img23.jpeg" style="width:100%"></div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+    <p><a href="Autoritratti.html">Autoritrattoteca</a></p>
+
+    <script src="scripts/slide.js"></script>
     
 
   </body>
